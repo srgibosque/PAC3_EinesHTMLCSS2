@@ -15,7 +15,51 @@
   </header>
 
   <main class="m-4 max-w-5xl lg:mx-auto">
+    <div class="flex flex-col gap-8">
+      <h2 class="font-mono text-2xl">Speakers</h2>
+      <form method="post" netlify class="flex flex-col gap-4" name="contact">
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <input 
+              type="text" 
+              class="rounded-md text-white py-2 px-3 bg-white/5 border border-white/20 focus:outline-none focus:border-primary-blue focus:shadow-focus w-full" 
+              placeholder="Enter your name">
+          </div>
     
+          <div>
+            <input 
+              type="email"
+              class="rounded-md text-white py-2 px-3 bg-white/5 border border-white/20 focus:outline-none focus:border-primary-blue focus:shadow-focus w-full"
+              placeholder="Enter your email">
+            <!-- <span class="" id="basic-addon2">@gmail.com</span> -->
+          </div>
+        </div>
+  
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <select class="rounded-md text-white py-2 px-3 bg-white/5 border border-white/20 focus:outline-none focus:border-primary-blue focus:shadow-focus w-full">
+              <option class="bg-midnight-steel" selected>Select the subject of your query</option>
+              <option class="bg-midnight-steel" value="1">General Inquiry</option>
+              <option class="bg-midnight-steel" value="2">Technical support</option>
+              <option class="bg-midnight-steel" value="3">Billing and payment</option>
+            </select>
+          </div>
+  
+          <div>
+            <textarea 
+              class="rounded-md text-white py-2 px-3 bg-white/5 border border-white/20 focus:outline-none focus:border-primary-blue focus:shadow-focus w-full" 
+              id="message" 
+              rows="8" 
+              placeholder="Enter your text">
+            </textarea>
+          </div>
+        </div>
+  
+        <include src="./views/button.html" locals='{
+          "text": "Send"
+        }'></include>
+      </form>
+    </div>
   </main>
 
   <footer>

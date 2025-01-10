@@ -17,7 +17,50 @@
   <main class="m-4 max-w-5xl lg:mx-auto">
     <div class="flex flex-col gap-8">
       <h2 class="font-mono text-2xl">Speakers</h2>
-      <include src="./views/card.html"></include>
+      <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <include src="./views/speaker-card.html" locals='{
+           "image": "./assets/images/speaker-1.jpg",
+           "name": "Lucas Graystone",
+           "jobDescription": "AI and Cyber Defense Expert",
+           "description": "Lucas specializes in leveraging AI to combat emerging cyber threats."
+        }'></include>
+
+        <include src="./views/speaker-card.html" locals='{
+            "image": "./assets/images/speaker-2.jpg",
+            "name": "Lucas Graystone",
+            "jobDescription": "AI and Cyber Defense Expert",
+            "description": "Lucas specializes in leveraging AI to combat emerging cyber threats."
+        }'></include>
+
+        <include src="./views/speaker-card.html" locals='{
+            "image": "./assets/images/speaker-3.jpg",
+            "name": "Lucas Graystone",
+            "jobDescription": "AI and Cyber Defense Expert",
+            "description": "Lucas specializes in leveraging AI to combat emerging cyber threats."
+        }'></include>
+
+        <include src="./views/speaker-card.html" locals='{
+          "image": "./assets/images/speaker-4.jpg",
+          "name": "Lucas Graystone",
+          "jobDescription": "AI and Cyber Defense Expert",
+          "description": "Lucas specializes in leveraging AI to combat emerging cyber threats."
+        }'></include>
+
+        <include src="./views/speaker-card.html" locals='{
+          "image": "./assets/images/speaker-5.jpg",
+          "name": "Lucas Graystone",
+          "jobDescription": "AI and Cyber Defense Expert",
+          "description": "Lucas specializes in leveraging AI to combat emerging cyber threats."
+        }'></include>
+
+        <include src="./views/speaker-card.html" locals='{
+          "image": "./assets/images/speaker-6.jpg",
+          "name": "Lucas Graystone",
+          "jobDescription": "AI and Cyber Defense Expert",
+          "description": "Lucas specializes in leveraging AI to combat emerging cyber threats."
+        }'></include>
+
+      </ul>
     </div>
   </main>
 
