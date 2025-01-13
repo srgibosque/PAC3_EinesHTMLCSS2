@@ -6,58 +6,58 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-  <title>UOC Boilerplate</title>
+  <title>CyberShield 2025</title>
 </head>
 
-<body class="text-white bg-gradient-to-b from-midnight-steel to-eclipse-night m-0">
-  <header class="header-container test-header sticky top-0 z-50">
+<body>
+  <header class="sticky top-0 z-50">
     <include src="./views/navbar.html"></include>
   </header>
 
-  <main class="m-4 max-w-5xl lg:mx-auto">
+  <main>
     <div class="flex flex-col gap-8">
-      <h2 class="font-mono text-2xl">Speakers</h2>
-      <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <h2 class="font-mono">Speakers</h2>
+      <ul class="supports-[display:grid]:grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         <include src="./views/speaker-card.html" locals='{
            "image": "./assets/images/speaker-1.jpg",
            "name": "Lucas Graystone",
-           "jobDescription": "AI and Cyber Defense Expert",
-           "description": "Lucas specializes in leveraging AI to combat emerging cyber threats."
+           "jobDescription": "Ethical Hacker and Security Consultant",
+           "description": "Ethan has over a decade of experience in penetration testing and vulnerability assessment."
         }'></include>
 
         <include src="./views/speaker-card.html" locals='{
             "image": "./assets/images/speaker-2.jpg",
-            "name": "Lucas Graystone",
+            "name": "Ethan Winslow",
             "jobDescription": "AI and Cyber Defense Expert",
             "description": "Lucas specializes in leveraging AI to combat emerging cyber threats."
         }'></include>
 
         <include src="./views/speaker-card.html" locals='{
             "image": "./assets/images/speaker-3.jpg",
-            "name": "Lucas Graystone",
-            "jobDescription": "AI and Cyber Defense Expert",
-            "description": "Lucas specializes in leveraging AI to combat emerging cyber threats."
+            "name": "Clara Whitmore",
+            "jobDescription": "Cloud Security Architect",
+            "description": "Clara advises governments on creating effective cybersecurity policies and frameworks."
         }'></include>
 
         <include src="./views/speaker-card.html" locals='{
           "image": "./assets/images/speaker-4.jpg",
-          "name": "Lucas Graystone",
-          "jobDescription": "AI and Cyber Defense Expert",
-          "description": "Lucas specializes in leveraging AI to combat emerging cyber threats."
+          "name": "Elena Fairchild",
+          "jobDescription": "Cybersecurity Policy Advisor",
+          "description": "Elena is a leader in mitigating cyberattacks and strengthening organizational resilience."
         }'></include>
 
         <include src="./views/speaker-card.html" locals='{
           "image": "./assets/images/speaker-5.jpg",
-          "name": "Lucas Graystone",
-          "jobDescription": "AI and Cyber Defense Expert",
-          "description": "Lucas specializes in leveraging AI to combat emerging cyber threats."
+          "name": "Ivy Harrington",
+          "jobDescription": "Incident Response Specialist",
+          "description": "Ivy focuses on securing the rapidly growing Internet of Things landscape."
         }'></include>
 
         <include src="./views/speaker-card.html" locals='{
           "image": "./assets/images/speaker-6.jpg",
-          "name": "Lucas Graystone",
-          "jobDescription": "AI and Cyber Defense Expert",
-          "description": "Lucas specializes in leveraging AI to combat emerging cyber threats."
+          "name": "Julian Ashford",
+          "jobDescription": "IoT and Smart Device Security Analyst",
+          "description": "Julian designs robust cloud infrastructures to ensure enterprise-level data protection."
         }'></include>
 
       </ul>

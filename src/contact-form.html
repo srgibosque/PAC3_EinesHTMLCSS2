@@ -6,30 +6,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-  <title>UOC Boilerplate</title>
+  <title>CyberShield 2025</title>
 </head>
 
-<body class="text-white bg-gradient-to-b from-midnight-steel to-eclipse-night m-0">
-  <header class="header-container test-header sticky top-0 z-50">
+<body>
+  <header class="sticky top-0 z-50">
     <include src="./views/navbar.html"></include>
   </header>
 
-  <main class="m-4 max-w-5xl lg:mx-auto">
+  <main>
     <div class="flex flex-col gap-8">
-      <h2 class="font-mono text-2xl">Contact us</h2>
+      <h2 class="font-mono">Contact us</h2>
       <form method="post" netlify class="flex flex-col gap-4" name="contact">
-        <div class="grid md:grid-cols-2 gap-4">
+        <div class="supports-[display:grid]:grid md:grid-cols-2 gap-4">
           <div>
             <input 
               type="text" 
-              class="rounded-md text-white py-2 px-3 bg-white/5 border border-white/20 focus:outline-none focus:border-primary-blue focus:shadow-focus w-full" 
+              class="input-field" 
               placeholder="Enter your name">
           </div>
     
           <div>
             <input 
               type="email"
-              class="rounded-md text-white py-2 px-3 bg-white/5 border border-white/20 focus:outline-none focus:border-primary-blue focus:shadow-focus w-full"
+              class="input-field"
               placeholder="Enter your email">
             <!-- <span class="" id="basic-addon2">@gmail.com</span> -->
           </div>
@@ -37,7 +37,7 @@
   
         <div class="grid md:grid-cols-2 gap-4">
           <div>
-            <select class="rounded-md text-white py-2 px-3 bg-white/5 border border-white/20 focus:outline-none focus:border-primary-blue focus:shadow-focus w-full">
+            <select class="input-field">
               <option class="bg-midnight-steel" selected>Select the subject of your query</option>
               <option class="bg-midnight-steel" value="1">General Inquiry</option>
               <option class="bg-midnight-steel" value="2">Technical support</option>
@@ -47,7 +47,7 @@
   
           <div>
             <textarea 
-              class="rounded-md text-white py-2 px-3 bg-white/5 border border-white/20 focus:outline-none focus:border-primary-blue focus:shadow-focus w-full" 
+              class="input-field" 
               id="message" 
               rows="8" 
               placeholder="Enter your text">
