@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cooking Contest 2024 Edition</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #ff6f61;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #333;
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: #ff6f61;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .recipes,
+    .contestants {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .recipe-card,
+    .contestant-card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #333;
+      color: white;
+      margin-top: 20px;
+    }
+
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Cooking Contest 2024 Edition</h1>
+  </header>
+
+  <nav>
+    <a href="#recipes">Recipes</a>
+    <a href="#contestants">Contestants</a>
+    <a href="#editions">Contest Editions</a>
+  </nav>
+
+  <main>
+    <section id="recipes">
+      <h2 class="section-title">The Recipes</h2>
+      <div class="recipes">
+        <div class="recipe-card">
+          <h3>Cajun Seafood Pasta</h3>
+          <p><strong>By:</strong> John Cooper</p>
+          <p>This Cajun seafood pasta recipe is a hot one, but delicious!</p>
+        </div>
+        <div class="recipe-card">
+          <h3>Cedar Planked Salmon</h3>
+          <p><strong>By:</strong> Marta Alonso</p>
+          <p>Salmon reaches its full potential when it's grilled on top of a cedar plank.</p>
+        </div>
+        <div class="recipe-card">
+          <h3>Poulet au Vinaigre</h3>
+          <p><strong>By:</strong> Mary Ann Stones</p>
+          <p>Irresistible chicken, cooked with vinegar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contestants">
+      <h2 class="section-title">Contestants</h2>
+      <div class="contestants">
+        <div class="contestant-card">
+          <h3>John Cooper</h3>
+        </div>
+        <div class="contestant-card">
+          <h3>Marta Alonso</h3>
+        </div>
+        <div class="contestant-card">
+          <h3>Mary Ann Stones</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="editions">
+      <h2 class="section-title">Contest Editions</h2>
+      <ul>
+        <li>2024</li>
+        <li>2023</li>
+        <li>2022</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Cooking Contest. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#recipes">Recipes</a> |
+      <a href="#contestants">Contestants</a> |
+      <a href="#editions">Editions</a>
+    </div>
+  </footer>
+</body>
+
+</html>
